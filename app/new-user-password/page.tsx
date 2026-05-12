@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Checkbox } from "@/components/ui/checkbox"
 
 const ALIGHT_REDIRECT_URL =
-  "https://betterbusinessplanning.wealthcareportal.com/Authentication/Handshake"
+  "https://medcom.wealthcareportal.com/Authentication/Handshake"
 
 export default function NewUserPasswordPage() {
   const [password, setPassword] = useState("")
@@ -54,7 +54,7 @@ export default function NewUserPasswordPage() {
   return (
     <div className="min-h-screen bg-white">
       <SiteHeader />
-      <div className="max-w-2xl px-4 py-10 mb-[270px] mx-auto md:mx-0 md:ml-[60px]">
+      <div className="max-w-2xl px-4 py-10 mb-67.5 mx-auto md:mx-0 md:ml-15">
         <div className="mb-6">
           <h2 className="text-base font-medium text-gray-900 mb-4">New User</h2>
           <h1 className="text-2xl font-semibold text-gray-900 mb-3">
@@ -76,7 +76,7 @@ export default function NewUserPasswordPage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Password"
-              className="max-w-[280px] h-10 bg-gray-50 border-gray-300 rounded-md"
+              className="max-w-70 h-10 bg-gray-50 border-gray-300 rounded-md"
             />
           </div>
 
@@ -90,7 +90,7 @@ export default function NewUserPasswordPage() {
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               placeholder="Confirm Password"
-              className="max-w-[280px] h-10 bg-gray-50 border-gray-300 rounded-md"
+              className="max-w-70 h-10 bg-gray-50 border-gray-300 rounded-md"
             />
           </div>
 

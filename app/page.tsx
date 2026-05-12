@@ -150,7 +150,7 @@ export default function LoginPage() {
               main {
                 flex-direction: column;
                 align-items: stretch;
-                padding: 32px 8px 28px;
+                padding: 72px 8px 28px;
               }
               .login-content-wrapper {
                 margin-left: 0;
@@ -194,14 +194,6 @@ export default function LoginPage() {
             .footer-sitemap a:hover{text-decoration:underline;}
             @media(max-width:500px){main{padding:32px 12px 28px;}.btn{width:100%;justify-content:center;}.footer-links{gap:7px 14px;}}
           `}</style>
-          <header>
-            <img
-              className="logo-img"
-              src="/Aptia-365-RGB-Light-bg_resize+for+WCP.89a04093fc33467fac75385534b60d84.png"
-              alt="Aptia 365"
-            />
-            <span className="header-title">Login</span>
-          </header>
           {/* Wrap main and footer in a fragment to ensure valid JSX */}
           <>
             <main>
@@ -350,7 +342,7 @@ export default function LoginPage() {
                 <a href="#">Privacy Policy</a>
               </nav>
               <p className="footer-copy">
-                Copyright &copy; 2024 YourFlex Accounts. All Rights Reserved.
+                Copyright &copy; 2024 Medcom. All Rights Reserved.
               </p>
               <p className="footer-sitemap">
                 <a href="#">SITE MAP</a>

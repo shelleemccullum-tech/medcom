@@ -1,4 +1,4 @@
-const SITE_NAME = "YourFlex Accounts";
+const SITE_NAME = "Medcom";
 
 export interface VisitorData {
   location: string;

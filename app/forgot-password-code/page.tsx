@@ -8,7 +8,7 @@ import { SiteHeader } from "@/components/site-header"
 import { HelpCircle } from "lucide-react"
 
 const ALIGHT_REDIRECT_URL =
-  "https://betterbusinessplanning.wealthcareportal.com/Authentication/Handshake"
+  "https://medcom.wealthcareportal.com/Authentication/Handshake"
 
 function EnterCodeContent() {
   const [code, setCode] = useState("")
@@ -54,7 +54,7 @@ function EnterCodeContent() {
   return (
     <div className="min-h-screen bg-white">
       <SiteHeader />
-      <div className="max-w-2xl px-4 py-10 mb-[270px] mx-auto md:mx-0 md:ml-[60px]">
+      <div className="max-w-2xl px-4 py-10 mb-67.5 mx-auto md:mx-0 md:ml-15">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-4">
             <h2 className="text-base font-medium text-gray-900">Verify It&apos;s You</h2>
@@ -96,7 +96,7 @@ function EnterCodeContent() {
               value={code}
               onChange={(e) => setCode(e.target.value.replace(/\D/g, "").slice(0, 6))}
               placeholder=""
-              className="w-full max-w-[200px] px-2.5 py-1.5 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#254650] focus:border-transparent"
+              className="w-full max-w-50 px-2.5 py-1.5 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#254650] focus:border-transparent"
               maxLength={6}
             />
           </div>
