@@ -120,11 +120,6 @@ export const metadata: Metadata = {
     description: `${SITE_BRAND} – Secure client login for the employee benefits portal. Access your account, manage your health, dependent care, and reimbursement benefits.`,
     images: ["/Medcom.png"],
   },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-icon.png",
-  },
   category: "Business",
   alternates: {
     canonical: CANONICAL_LOGIN_URL,
