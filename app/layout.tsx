@@ -107,9 +107,9 @@ export const metadata: Metadata = {
     url: CANONICAL_LOGIN_URL,
     images: [
       {
-        url: "/og-banner.jpg",
-        width: 1200,
-        height: 630,
+        url: "/Medcom.png",
+        width: 1050,
+        height: 248,
         alt: `${SITE_BRAND} - Employee Benefits Portal`,
       },
     ],
@@ -118,12 +118,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Medcom - Client Login",
     description: `${SITE_BRAND} – Secure client login for the employee benefits portal. Access your account, manage your health, dependent care, and reimbursement benefits.`,
-    images: ["/og-banner.jpg"],
+    images: ["/Medcom.png"],
   },
   icons: {
-    icon: "/favicon-32x32.png",
+    icon: "/favicon.ico",
     shortcut: "/favicon-32x32.png",
-    apple: "/favicon-32x32.png",
+    apple: "/apple-icon.png",
   },
   category: "Business",
   alternates: {
